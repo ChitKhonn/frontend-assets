@@ -13,3 +13,6 @@
         <a href="{{route('about')}}">About Page</a>
     </div>
 @endsection
+@push('script')
+    @vite('resources/js/indexPage.js')
+@endpush

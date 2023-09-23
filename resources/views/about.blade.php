@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
     <div class="m-3">
-        <h1 class="text-primary">
+        <h1 class="text-primary" id="aboutHeading">
             I'm about page.
         </h1>
         <p class="text-black-50">
@@ -12,3 +12,6 @@
         <a href="{{route('index')}}">Index Page</a>
     </div>
 @endsection
+@push('script')
+    @vite("resources/js/aboutPage.js")
+@endpush
